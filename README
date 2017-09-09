@@ -29,8 +29,7 @@ TASK3:BPNN-XGboost(BPXG), a linear average model of BackPropagationNeuralNetwork
 -----------------------------------------------------------------------------
 Final Models:
 TASK1:S-TFIDF, a promoted model based on TFIDF and Textrank.
-TASK2:S-TFIDF/DocumentEmbedding-SVC-Stacking(SDSS), a stacking model that using S-TFIDF and DocumentEmbedding as first layer 
-      and using SVC as second layer.
+TASK2:S-TFIDF/DocumentEmbedding-SVC-Stacking(SDSS), a stacking model that using S-TFIDF and DocumentEmbedding as first layer and using SVC as second layer.
 TASK3:PAR/GDR-NuSVR-Stacking(PGNS), a stacking model that using PassiveActiveRegressor and GrandientBoostingRegressor
       as first layer and using NuSVR as second layer.
 -----------------------------------------------------------------------------
