@@ -8,27 +8,20 @@
 this repository is established to review codes and documents for our team ELP in SMPCUP2017, which is a user profiling contest
 based on massive data provided by CSDN, including text, relations and interactions of users.
 In SMPCUP2017, every team is requested to work on three specific tasks:
-TASK1:Given a number of user documents (blogs or posts), generate 3 most appropriate keywords for each document.
-      The generated keywords must appear in the document.
-TASK2:Given the user's document information (blog or post) and behavior data (browsing, comment, collection, forwarding,
-      point-of-thumb, step-by-step, private, etc.) for each user, mark the three most relevant interests for each user.
-      The label space is given by CSDN.
-TASK3:Given a number of users in a period of time (at least 1 year) document information (blog or post) and behavioral data
-      (browsing, commentary, collection, forwarding, dating, attention, private messages, etc.),
-      predict each user in the future over a period of time (half a year to 1 year) growth value.
-      User growth is based on the user's overall performance scoring income, but will not publish the specific score criteria.
-      The growth value will be normalized to the [0, 1] interval, where the value is 0 for user churn.
+- TASK1:Given a number of user documents (blogs or posts), generate 3 most appropriate keywords for each document. The generated keywords must appear in the document.
+- TASK2:Given the user's document information (blog or post) and behavior data (browsing, comment, collection, forwarding, point-of-thumb, step-by-step, private, etc.) for each user, mark the three most relevant interests for each user. The label space is given by CSDN.
+- TASK3:Given a number of users in a period of time (at least 1 year) document information (blog or post) and behavioral data (browsing, commentary, collection, forwarding, dating, attention, private messages, etc.), predict each user in the future over a period of time (half a year to 1 year) growth value. User growth is based on the user's overall performance scoring income, but will not publish the specific score criteria. The growth value will be normalized to the [0, 1] interval, where the value is 0 for user churn.
 More detailed imformation could be browsed on the page: https://biendata.com/competition/smpcup2017/
 
 ## Baseline Models:
-TASK1:TFIDF(Reference:https://en.wikipedia.org/wiki/Tf–idf#Term_frequency)
-TASK2:W-BAG, a model based on Word2Vec and BaggingClassifer
-TASK3:BPNN-XGboost(BPXG), a linear average model of BackPropagationNeuralNetwork and XGboost
+- TASK1:TFIDF(Reference:https://en.wikipedia.org/wiki/Tf–idf#Term_frequency)
+- TASK2:W-BAG, a model based on Word2Vec and BaggingClassifer
+- TASK3:BPNN-XGboost(BPXG), a linear average model of BackPropagationNeuralNetwork and XGboost
 
 ## Final Models:
-TASK1:S-TFIDF, a promoted model based on TFIDF and Textrank.
-TASK2:S-TFIDF/DocumentEmbedding-SVC-Stacking(SDSS), a stacking model that using S-TFIDF and DocumentEmbedding as first layer and using SVC as second layer.
-TASK3:PAR/GDR-NuSVR-Stacking(PGNS), a stacking model that using PassiveActiveRegressor and GrandientBoostingRegressor as first layer and using NuSVR as second layer.
+- TASK1:S-TFIDF, a promoted model based on TFIDF and Textrank.
+- TASK2:S-TFIDF/DocumentEmbedding-SVC-Stacking(SDSS), a stacking model that using S-TFIDF and DocumentEmbedding as first layer and using SVC as second layer.
+- TASK3:PAR/GDR-NuSVR-Stacking(PGNS), a stacking model that using PassiveActiveRegressor and GrandientBoostingRegressor as first layer and using NuSVR as second layer.
 
 ## Performance:
 TASK1  | TRAIN | VALID | TEST |
