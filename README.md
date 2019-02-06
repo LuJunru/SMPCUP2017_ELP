@@ -1,5 +1,5 @@
 # SMPCUP2017
-### Team：ELP
+### Team: ELP
 ### Paper link: http://www.data-intelligence.org/p/19/
 ### Organization：University of International Relations
 ### Members：Lu Junru; Chen Le; Meng Kongming; Wang Fengyi; Xiangjun; Zhou Kaimin; Dong Zhenyuan; Shan jiawei; Lian Lingchen
@@ -16,7 +16,7 @@ In SMPCUP2017, every team is requested to work on three specific tasks:
 More detailed imformation could be browsed on the page: https://biendata.com/competition/smpcup2017/
 
 ## Baseline Models:
-- TASK1: TFIDF(Reference:https://en.wikipedia.org/wiki/Tf–idf#Term_frequency)
+- TASK1: TFIDF(Reference: https://en.wikipedia.org/wiki/Tf–idf#Term_frequency)
 - TASK2: W-BAG, a model based on Word2Vec and BaggingClassifer
 - TASK3: BPNN-XGboost(BPXG), a linear average model of BackPropagationNeuralNetwork and XGboost
 
